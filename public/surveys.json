@@ -1,0 +1,66 @@
+[
+  {
+    "id": "survey-1",
+    "title": "Customer Satisfaction",
+    "subtitle": "Tell us how we're doing",
+    "status": "not-started",
+    "questions": [
+      {
+        "text": "How satisfied are you with our product?",
+        "answers": ["Very satisfied", "Neutral", "Not satisfied"]
+      },
+      {
+        "text": "Would you recommend us?",
+        "answers": ["Yes", "Maybe", "No"]
+      },
+      {
+        "text": "How is the pricing?",
+        "answers": ["Fair", "Too high", "Too low"]
+      },
+      {
+        "text": "How often do you use it?",
+        "answers": ["Daily", "Weekly", "Rarely"]
+      },
+      {
+        "text": "What do you like most?",
+        "answers": ["Ease of use", "Design", "Performance"]
+      },
+      {
+        "text": "What should we improve?",
+        "answers": ["Support", "Features", "Speed"]
+      }
+    ]
+  },
+  {
+    "id": "survey-2",
+    "title": "Customer Satisfaction",
+    "subtitle": "Tell us how we're doing",
+    "status": "not-started",
+    "questions": [
+      {
+        "text": "How satisfied are you with our product?",
+        "answers": ["Very satisfied", "Neutral", "Not satisfied"]
+      },
+      {
+        "text": "Would you recommend us?",
+        "answers": ["Yes", "Maybe", "No"]
+      },
+      {
+        "text": "How is the pricing?",
+        "answers": ["Fair", "Too high", "Too low"]
+      },
+      {
+        "text": "How often do you use it?",
+        "answers": ["Daily", "Weekly", "Rarely"]
+      },
+      {
+        "text": "What do you like most?",
+        "answers": ["Ease of use", "Design", "Performance"]
+      },
+      {
+        "text": "What should we improve?",
+        "answers": ["Support", "Features", "Speed"]
+      }
+    ]
+  }
+]

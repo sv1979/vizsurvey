@@ -1,0 +1,560 @@
+[
+  {
+    "id": "survey-1",
+    "title": "Leadership",
+    "subtitle": "How do you lead an organization?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Leadership visibility",
+        "text": "How present and engaged is your leadership team across the organization?",
+        "options": [
+          "Leadership visibility is limited to administrative or boardroom settings, with minimal presence on the front lines.", 
+          "Leaders participate in some rounding, but variation in approach and feedback loops limit consistency and impact.", 
+          "All leaders engage in structured rounding, supported by standard work and a closed feedback loop, reinforcing priorities and fostering frontline engagement."
+        ]
+      },
+      {
+        "label": "Strategic goal alignment",
+        "text": "How are goals set and how do they align strategically?",
+        "options": [
+          "Strategic goals are set independently by executives without deliberate alignment across functions or with system-wide strategy.",
+          "Goal-setting is inclusive of functional leaders and increasingly aligned with the strategic plan, but full vertical and horizontal integration is not yet realized.",
+          "Organizational goals are jointly developed and cascaded across all levels with shared accountability. Leaders are aligned around a clear enterprise strategy."
+        ]
+      },
+      {
+        "label": "Board engagement",
+        "text": "How engaged is the Board?",
+        "options": [
+          "The Board primarily reviews financial performance and is not actively engaged in oversight of clinical quality or enterprise strategy.",
+          "The Board is expanding its oversight to include quality and strategic metrics, with some effort to align goals and ensure accountability.",
+          "Board members are actively engaged in enterprise strategy, quality oversight, and performance accountability, championing key initiatives across the organization."
+        ]
+      },
+      {
+        "label": "Leadership incentivization",
+        "text": "How are leaders incentivized?",
+        "options": [
+          "Incentives are tied to siloed performance metrics at the entity level, with no link to system-wide goals or outcomes.",
+          "System-level incentive structures are being explored, with initial steps toward alignment across entities and functions.",
+          "Incentive models are aligned to enterprise priorities, including quality, growth, financial, and cultural performance. Leaders are rewarded for driving impact across the system."
+        ]
+      },
+      {
+        "label": "Leadership behavior modeling",
+        "text": "How effectively does leadership model and reinforce desired behaviors across the organization?",
+        "options": [
+          "Leaders emphasize outcomes but do not model expected behaviors, leaving execution to others.",
+          "Leaders occasionally model key behaviors, with increasing awareness of their influence on organizational culture.",
+          "Leaders consistently model expected behaviors, hold themselves accountable, and reinforce cultural norms through visible actions and coaching."
+        ]
+      },
+      {
+        "label": "Leadership development",
+        "text": "How aligned are leadership development efforts with enterprise strategy and succession planning?",
+        "options": [
+          "Leadership development is informal and uncoordinated. Succession planning is ad hoc or not in place.",
+          "Leadership development programs exist but are not fully integrated with strategic goals or succession pipelines.",
+          "Leadership development is aligned to strategic priorities, with robust succession plans and targeted development for future system leaders."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-2",
+    "title": "Data & Technology",
+    "subtitle": "How do you ensure data is transparent and actionable?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Data decision-making",
+        "text": "How are you using data to inform decisions?",
+        "options": [
+          "Data is collected to meet external requirements, but limited use exists for strategic decisions or performance improvement. Internal benchmarks guide most efforts.",
+          "A data-driven strategy is emerging, but insights are limited. Abundant data exists, but it is underutilized due to inconsistent integration and lack of prioritization.",
+          "Data is actively used across the organization to drive top-decile performance, inform decisions, and continuously improve—even when goals are met. Clean, reliable data is supported by standard definitions and meaningful benchmarks."
+        ]
+      },
+      {
+        "label": "Data integrity",
+        "text": "How consistent is your reporting and accountability toward data integrity?",
+        "options": [
+          "Reporting is inconsistent, and there is no clear ownership for data accuracy or integrity. Data often lacks credibility across teams.",
+          "Reporting occurs intermittently, with growing accountability for documentation accuracy and trend analysis. Improvements are reactive rather than systemic.",
+          "A formal data governance structure ensures consistent, accurate documentation. Performance data is used proactively to track trends, inform strategy, and course-correct."
+        ]
+      },
+      {
+        "label": "Data connection",
+        "text": "How connected is the data?",
+        "options": [
+          "Data is siloed by entity, with no central repository or shared definitions. Access is inconsistent and often restricted.",
+          "Entities have begun sharing data across select domains, and common definitions are emerging. Access rules are being formalized.",
+          "A system-led governance body oversees a centralized repository with unified definitions and clear access parameters. Leaders at all levels rely on integrated data to drive decisions."
+        ]
+      },
+      {
+        "label": "AI integration",
+        "text": "What is your organization’s approach to AI adoption and integration?",
+        "options": [
+          "AI use is minimal or nonexistent. No strategy or guidance exists for deployment, governance, or use cases.",
+          "AI is piloted in isolated use cases. Strategy development is underway, with initial discussions on governance and risk mitigation.",
+          "A defined AI strategy is in place, guided by a multidisciplinary committee focused on guardrails, integration, governance, and future applications."
+        ]
+      },
+      {
+        "label": "EMR & ERP integration",
+        "text": "How integrated are your electronic medical record (EMR) and enterprise resource planning (ERP) systems?",
+        "options": [
+          "EMR and ERP systems are fragmented and not interoperable. Entities use separate systems, limiting visibility and coordination.",
+          "A single EMR has been selected and is partially integrated with ERP. Data is beginning to inform select operational and clinical decisions.",
+          "EMR and ERP are fully integrated, providing comprehensive data to drive strategic, financial, and clinical performance across the enterprise."
+        ]
+      },
+      {
+        "label": "Data-driven leadership",
+        "text": "How do leaders use data in day-to-day operations?",
+        "options": [
+          "Leaders rely on anecdotal input and retrospective reports for decision-making.",
+          "Some leaders reference performance dashboards, though use varies. Data is used in specific areas, but not across the board.",
+          "All leaders use data routinely in huddles and planning. Dashboards are part of standard operating rhythm and linked to KPIs and strategic objectives."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-3",
+    "title": "Learning & management systems",
+    "subtitle": "How do you improve?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Visual management",
+        "text": "How do you use visual management across your organization?",
+        "options": [
+          "Visual management tools are not consistently used, and when present, focus primarily on lagging indicators or outcomes. There is little frontline engagement.",
+          "Select clinical areas use visual boards to track process measures. Boards are maintained with varying consistency and limited use in decision-making.",
+          "Visual management is deployed across the organization to support transparency, real-time decision-making, and frontline alignment with strategic priorities. Boards are routinely updated and used to drive performance."
+        ]
+      },
+      {
+        "label": "Standardized improvement",
+        "text": "How standardized is your approach to improvement efforts?",
+        "options": [
+          "Improvement efforts are ad hoc, with no consistent methods or expectations. Resources may be allocated inconsistently.",
+          "A standardized improvement methodology (e.g., Lean, PDSA) is encouraged and used in some areas. Dedicated time and resources are becoming the norm.",
+          "Standardized improvement methods are embedded in daily practice. All levels of staff are trained and expected to identify and lead improvements as part of routine work."
+        ]
+      },
+      {
+        "label": "Learning & design process ",
+        "text": "Do you have a learning and design process?",
+        "options": [
+          "There is no formal process to capture current state or integrate data and stakeholder input into future-state planning.",
+          "The organization is beginning to apply design-thinking principles and data-driven approaches to improvement, with stakeholder engagement in specific initiatives.",
+          "Learning and design processes are systematic and data-informed, driving co-designed, future-state models across functions. Stakeholders are consistently engaged."
+        ]
+      },
+      {
+        "label": "Standard work definition",
+        "text": "How defined is your standard work?",
+        "options": [
+          "Standard work is rarely defined or documented, leading to variation and inconsistent performance.",
+          "Standard work exists in some areas, but application and adoption are inconsistent across teams and sites.",
+          "Standard work is clearly defined, consistently applied, and regularly reviewed. It forms the foundation for improvement and coaching."
+        ]
+      },
+      {
+        "label": "Daily improvement culture",
+        "text": "How does your organization support continuous improvement capabilities at all levels?",
+        "options": [
+          "Improvement is driven only by formal project teams or outside consultants. Frontline teams are not expected to participate.",
+          "Some departments are developing continuous improvement capabilities, often driven by leaders or designated performance teams.",
+          "Continuous improvement is embedded into daily work. All staff are empowered, trained, and supported to identify, test, and implement improvements as part of their roles."
+        ]
+      },
+      {
+        "label": "Capability building",
+        "text": "How consistent is your approach to capability building in improvement and change management?",
+        "options": [
+          "Improvement and change management skills are not systematically taught or expected.",
+          "Training in improvement methods exists for selected leaders and teams but is not yet widespread.",
+          "Improvement and change leadership are core capabilities with structured training programs and coaching embedded across the organization. Leaders at all levels are equipped to drive sustainable change."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-4",
+    "title": "Strategy",
+    "subtitle": "How do you align and engage teams?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Goal setting",
+        "text": "How does your organization set and communicate goals?",
+        "options": [
+          "Vision exists but is inconsistently known. Goal-setting is fragmented and lacks clear linkage to enterprise strategy.",
+          "Goal-setting is increasingly collaborative, with leaders working to align goals to the strategic plan and communicate them more broadly.",
+          "Strategic goals are clearly communicated and cascaded. Team members at all levels understand their role in advancing enterprise objectives."
+        ]
+      },
+      {
+        "label": "Goal incentivization",
+        "text": "How are goals incentivized amongst teams?",
+        "options": [
+          "Goals are not linked to incentives, resulting in inconsistent motivation or accountability.",
+          "Some departments have incentives tied to functional targets (e.g., quality, spend), but alignment across the enterprise is still evolving.",
+          "Incentives are aligned with cascaded enterprise goals across departments, reinforcing shared ownership of system-wide performance."
+        ]
+      },
+      {
+        "label": "Planning function",
+        "text": "How does your organization plan strategically?",
+        "options": [
+          "Strategic planning is siloed, with departments operating independently and little enterprise-wide coordination.",
+          "A central planning function is emerging, supported by functional input. Some consistency exists, but full integration is not achieved.",
+          "A centralized strategy team collaborates with functional leaders to align strategy, financial planning, and resource allocation. Strategy informs budgeting, not vice versa."
+        ]
+      },
+      {
+        "label": "Planning strategy",
+        "text": "What sources of insight inform your strategic planning process?",
+        "options": [
+          "Planning is reactive, driven by external challenges rather than proactive market or performance insights.",
+          "Planning includes some analytics and market intelligence, and there’s momentum toward a formal strategic planning discipline.",
+          "Strategic planning is data-informed, proactive, and dynamic—leveraging predictive tools, market monitoring, and organizational learning to guide growth."
+        ]
+      },
+      {
+        "label": "Planning integration",
+        "text": "How integrated is your strategic planning?",
+        "options": [
+          "Entities operate independently, each crafting plans with limited regard for system alignment.",
+          "Some integration exists, with entities aligning on system-level goals, but variations in planning and execution persist.",
+          "System-led planning drives resource prioritization and strategic sizing of services, ensuring optimal performance across entities."
+        ]
+      },
+      {
+        "label": "Strategic performance tracking",
+        "text": "How does your organization track progress against strategic goals?",
+        "options": [
+          "Strategic goals are not tracked regularly or lack measurable KPIs.",
+          "Progress toward strategic goals is reported periodically, but KPIs are inconsistently used or aligned across the organization.",
+          "Strategic goals are tracked through a performance dashboard with aligned KPIs. Leaders use data to adjust course, ensuring strategic agility and accountability."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-5",
+    "title": "Culture",
+    "subtitle": "How do you create a healthy practice environment?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Quality accountability",
+        "text": "Who is accountable for quality?",
+        "options": [
+          "Responsibility for quality rests with the quality department, with limited operational or clinical ownership.",
+          "Operational and clinical leaders increasingly take ownership of quality metrics and safety outcomes. Reporting of concerns is growing, allowing us to take action.",
+          "All team members own quality and safety outcomes. Safety concerns are actively sought, transparently shared, and used for continuous learning."
+        ]
+      },
+      {
+        "label": "Care standardization",
+        "text": "How do you standardize care?",
+        "options": [
+          "Wide variation exists in care delivery across units, facilities, and services, often lacking system oversight.",
+          "Standardization initiatives are underway, targeting priority areas to reduce clinical variation and improve consistency.",
+          "Care is standardized across entities, aligned to centers of excellence or geographic strategy with a population health lens."
+        ]
+      },
+      {
+        "label": "Retention strategy",
+        "text": "What is the focus of your retention strategy? ",
+        "options": [
+          "Retention efforts are primarily reactive—focused on reducing agency spend and turnover without formal professional development programs.",
+          "Cultural initiatives, reduced burden of work, and early development programs like transition-to-practice and clinical ladders are in progress.",
+          "Retention strategy is proactive, holistic, and embedded in culture—with clinical ladders, development pathways, well-being support, and alignment to “top of license” practice."
+        ]
+      },
+      {
+        "label": "Value alignment",
+        "text": "To what extent do team members feel connected to and act on your mission, vision, and values?",
+        "options": [
+          "Purpose is known, but team members lack clarity on how their roles connect to the broader mission and improvement efforts.",
+          "There’s partial alignment to values and increasing participation in change efforts, but experience varies across teams and entities.",
+          "Team members feel connected to the mission and values, supported by strong community, readiness for change, and a culture of continuous improvement."
+        ]
+      },
+      {
+        "label": "Team structure",
+        "text": "How are your teams structured to align?",
+        "options": [
+          "Professional groups operate independently with limited coordination or aligned accountability.",
+          "Select service lines have adopted dyad/triad leadership models; broader adoption is still in progress.",
+          "Dyad and triad structures are embedded across the organization, aligning clinical, operational, and administrative leaders toward shared goals."
+        ]
+      },
+      {
+        "label": "Cultural alignment",
+        "text": "How culturally aligned is your organization?",
+        "options": [
+          "Each entity operates with its own identity, and employees feel more aligned to their local organization than the health system.",
+          "Work is underway to define and promote a unified culture across entities, with emerging alignment to system values.",
+          "The system fosters a unified cultural identity. Employees identify as part of the larger system, with shared values and a cohesive experience across all entities."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-6",
+    "title": "Spend management",
+    "subtitle": "How do you maximize every dollar spent?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Spend management categories",
+        "text": "Where are spend management efforts happening at your organization?",
+        "options": [
+          "Spend management is inconsistent across categories, with some efforts limited to high-cost or high-visibility areas.",
+          "Efforts are expanding across both direct and indirect spend categories, with emerging consistency in approach and reporting.",
+          "A comprehensive, enterprise-wide approach is in place across all spend categories—including clinical, operational, and capital—guided by performance targets."
+        ]
+      },
+      {
+        "label": "Spend management goals",
+        "text": "What is your spend management goal and who is involved in these efforts?",
+        "options": [
+          "Goals focus mostly on price negotiations with minimal engagement from clinicians or alignment with supply chain.",
+          "Collaborative efforts are growing, with some physician engagement and alignment between supply chain and stakeholders.",
+          "Physicians, supply chain, and stakeholders co-lead initiatives focused on total cost of care and optimal value. The organization presents a united front to the market."
+        ]
+      },
+      {
+        "label": "Spend management strategy",
+        "text": "What strategies are you using for spend management?",
+        "options": [
+          "Efforts lack consideration for supplier diversity, supply resilience, or price assurance. Minimal strategic insight is applied.",
+          "Some categories now include environmental impact, supplier diversity, and assurance planning—supported by emerging intelligence and tools.",
+          "Strategies are integrated across all categories, factoring in supplier diversity, ESG, assurance, and analytics to optimize performance and sustainability."
+        ]
+      },
+      {
+        "label": "Supply chain integration",
+        "text": "How integrated is your supply chain?",
+        "options": [
+          "Supply chain operations are largely local. Vendor management, contracting, and sourcing are siloed across entities.",
+          "Centralized procurement and contracting are in place, but some functions remain local. Integration across all spend categories is in progress.",
+          "Supply chain is fully centralized and integrated with clinical and financial functions. System-wide standardization and analytics drive high-value decision-making."
+        ]
+      },
+      {
+        "label": "Performance measurement",
+        "text": "How does your organization measure and act on financial and operational performance?",
+        "options": [
+          "Key performance indicators are cost-centric and lack alignment to broader system goals. Tracking is minimal and lacks follow-through.",
+          "A balanced scorecard is emerging, with internal benchmarks used to monitor cost, efficiency, and performance.",
+          "The organization uses a balanced scorecard with cost, quality, and performance KPIs. Benchmarks are external, and root cause analysis informs improvement."
+        ]
+      },
+      {
+        "label": "Capital spend alignment",
+        "text": "How aligned are capital purchasing decisions across your system?",
+        "options": [
+          "Capital purchases are made at the entity level with little collaboration or alignment to system goals.",
+          "Some system coordination exists, but capital planning remains decentralized and inconsistently linked to strategic priorities.",
+          "Capital decisions are system-led, data-informed, and tied to enterprise strategy and ROI. Cross-functional teams including finance, clinical, and supply chain leaders co-lead prioritization."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-7",
+    "title": "System alignment",
+    "subtitle": "How do you work as one organization?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Decision making",
+        "text": "At what level are decisions made?",
+        "options": [
+          "Local Boards operate independently, making autonomous decisions with limited alignment to system governance.",
+          "Entity Boards retain some decision-making but operate under a system Board with partial oversight and emerging standardization.",
+          "Decision-making is system-led, with local representation on the system Board. All key decisions are aligned to standardized enterprise frameworks."
+        ]
+      },
+      {
+        "label": "Value alignment",
+        "text": "Are your mission, vision and values aligned across the system?",
+        "options": [
+          "Entities operate with independent missions and values, leading to fragmented identity and engagement.",
+          "A system-level mission, vision, and values is being developed and introduced, with varying adoption across entities.",
+          "Shared mission, vision and values guide decision-making, culture, and communication across all entities. They are visible, lived, and deeply embedded."
+        ]
+      },
+      {
+        "label": "Financial alignment",
+        "text": "How is your system structured financially?",
+        "options": [
+          "No centralized financial model. Entities operate financially independently with inconsistent performance metrics and resource planning.",
+          "The organization is shifting toward shared financial models, aligning reporting systems and reducing duplication.",
+          "A unified financial structure aligns system assets to deliver coordinated care, optimize returns, and reduce duplication of capital and operational investments."
+        ]
+      },
+      {
+        "label": "Operational alignment",
+        "text": "How is your system structured operationally?",
+        "options": [
+          "Services and operations are siloed across entities with no clear system-level coordination or standardization.",
+          "There is growing operational alignment, with some functions reporting into centralized system departments or shared service models.",
+          "The system strategically centralizes services where scale, performance, or quality benefits exist, while allowing market-responsive decentralization where needed."
+        ]
+      },
+      {
+        "label": "Community representation",
+        "text": "How is your system represented in your communities?",
+        "options": [
+          "Local brands are dominant, and there’s minimal system brand presence or recognition in the market.",
+          "Brand strategy is evolving toward dual identity, with some consistency in representing the system.",
+          "The system leads brand presence and trust, with local entities reinforcing system identity to strengthen network cohesion and market clarity."
+        ]
+      },
+      {
+        "label": "Care coordination",
+        "text": "How do you coordinate care?",
+        "options": [
+          "Care coordination is limited and manually driven, with gaps across sites, providers, and patient transitions.",
+          "Technology and process improvements are enabling better intra- and inter-entity coordination, with growing visibility across transitions of care.",
+          "A unified, patient-centered care model enables seamless coordination across the continuum—leveraging shared data, aligned protocols, and a high-reliability infrastructure."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-8",
+    "title": "Physician enterprise",
+    "subtitle": "How do you strengthen physician enterprise?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Provider integration",
+        "text": "How are providers integrated across your system?",
+        "options": [
+          "Peer review, privileging, and onboarding occur independently across entities, with no system-wide alignment or oversight.",
+          "Work is underway to create consistent practices across the system. Some alignment exists, but execution and governance are variable.",
+          "Provider integration is led at the system level with standardized credentialing, peer review, and onboarding—driving consistency, quality, and equity in provider performance."
+        ]
+      },
+      {
+        "label": "Clinical care alignment",
+        "text": "To what extent are clinical care pathways, protocols, and order sets standardized and followed across the system?",
+        "options": [
+          "There is no system-wide alignment of clinical pathways or protocols. Variation exists across entities and specialties.",
+          "Standardization efforts have begun, with initial governance structures in place. Some pathways are aligned, but adherence and system spread vary.",
+          "Standardized, evidence-based pathways are in place across all entities, led by a joint clinical governance body. Adherence is monitored, and best practices are continuously shared."
+        ]
+      },
+      {
+        "label": "Physician engagement in leadership",
+        "text": "How engaged are physicians in strategic decision-making and performance improvement?",
+        "options": [
+          "Physicians have limited involvement in system strategy and improvement efforts. Participation is ad hoc or leader-dependent.",
+          "Physicians are consulted in some areas and may lead specific initiatives, but governance structures are still forming.",
+          "Physicians are actively engaged in governance, strategic planning, and performance improvement. Leadership roles and incentives align to system priorities."
+        ]
+      },
+      {
+        "label": "Physician incentive alignment",
+        "text": "How aligned are physician incentives with organizational goals?",
+        "options": [
+          "Physician incentives are based on volume or productivity and not tied to system goals.",
+          "Some incentives align with quality or access goals, but financial and strategic alignment varies across entities.",
+          "Incentives are designed around enterprise goals—including quality, access, cost, and patient outcomes—and are consistently applied across physician groups."
+        ]
+      },
+      {
+        "label": "APP utilization",
+        "text": "How effectively is your organization integrating and optimizing Advanced Practice Providers (APPs) to support the physician enterprise?",
+        "options": [
+          "APP roles are underutilized or inconsistently defined. There is limited strategy or structure around how APPs support physicians or contribute to enterprise goals.",
+          "APPs are integrated in some areas, with defined roles and growing collaboration with physicians. Efforts to expand their use are underway but not yet systemwide or consistently aligned with strategic goals.",
+          "APPs are fully integrated across the physician enterprise, with clear roles, optimized scope of practice, and structured collaboration. Their use is strategically aligned to improve access, efficiency, and provider satisfaction."
+        ]
+      },
+      {
+        "label": "Physician leadership development",
+        "text": "How do you foster leadership development within your physician enterprise?",
+        "options": [
+          "Leadership roles are informal or based on tenure, with no structured development path for physicians.",
+          "Some leadership training is available, often for those already in leadership roles. A pipeline is being explored.",
+          "A structured physician leadership pathway exists with training, mentoring, and succession planning tied to strategic capabilities and system needs."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-9",
+    "title": "Ambulatory care continuum",
+    "subtitle": "How do you fuel outpatient growth?",
+    "status": "not-started",
+    "questions": [
+      {
+        "label": "Consumer-focused capabilities",
+        "text": "Which consumer-facing capabilities have been prioritized and implemented to improve access and experience?<ul><li>Online scheduling</li><li>Centralized scheduling</li><li>Same day access</li><li>Telehealth/virtual visits</li><li>At-home options</li><li>Two-way communication/ engagement via patient portal</li></ul>",
+        "options": [
+          "Consumer-facing capabilities (e.g., online scheduling, telehealth, patient portal) are limited or absent, with no defined strategy or roadmap.",
+          "Key consumer access tools are being implemented (2–4 in place), with a roadmap in development to close remaining gaps.",
+          "A broad suite of consumer-facing capabilities is fully implemented (4+), integrated across access points, and continuously optimized through feedback and data."
+        ]
+      },
+      {
+        "label": "Sites-of-care connection",
+        "text": "How advanced is your organization in connecting and complementing sites of care?",
+        "options": [
+          "Sites of care (e.g., ambulatory, specialty, post-acute) operate in silos with minimal coordination, shared information, or referral alignment.",
+          "Initial infrastructure is being developed to enable communication, referral management, and care coordination across sites.",
+          "Sites of care are integrated through shared records, referral systems, treatment planning, and patient transitions. Continuity is seamless across the system."
+        ]
+      },
+      {
+        "label": "Care delivery evolution",
+        "text": "How evolved is your care delivery model?",
+        "options": [
+          "Traditional care models dominate, with little investment in team-based care, digital transformation, or scope-of-practice optimization.",
+          "The organization is investing in care redesign (e.g., top-of-license practice), but operational challenges remain around capacity and workflow.",
+          "Team-based, top-of-license, and tech-enabled care models are embedded system-wide, improving access, productivity, and outcomes."
+        ]
+      },
+      {
+        "label": "Access measurement",
+        "text": "Are you measuring access to care and capacity with technology?",
+        "options": [
+          "Access and capacity are monitored manually or infrequently. Technology to support demand management is lacking or underused.",
+          "Access and capacity KPIs are tracked and beginning to inform strategy. Technology investment is planned or underway.",
+          "Advanced tools (e.g., demand forecasting, capacity optimization) are deployed and used across service lines. Performance incentives are tied to KPIs."
+        ]
+      },
+      {
+        "label": "Population health investment",
+        "text": "Are you investing in population health strategies or staff education?",
+        "options": [
+          "There is no formal strategy or investment for population health or targeted care interventions.",
+          "Early-stage investments or pilots exist to stratify populations and educate staff, but full execution is incomplete.",
+          "Staff understand how to segment populations, target interventions, and track outcomes. Continuous process improvement supports this work."
+        ]
+      },
+      {
+        "label": "Patient-centered investment",
+        "text": "Are you investing in patient-centered care strategies?",
+        "options": [
+          "Patient-centered care strategies are not prioritized, and disparities or experience gaps go unaddressed.",
+          "Early work is underway to embed equity and personalization into care delivery, often supported by small teams or pilots.",
+          "Equity-driven, patient-centered models are embedded in care delivery. Risk stratification, feedback loops, and care personalization are part of standard operations."
+        ]
+      }
+    ]
+  }
+]
