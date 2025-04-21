@@ -9,7 +9,7 @@ $color-orange: #ed4b08;
 $color-orange-fade: #fde2d8;
 $color-yellow: #f9bb2a;
 
-$tablet: 760px;
+$tablet: 768px;
 $desktop: 1440px;
 $desktop-xl: 1864px;
 
@@ -652,16 +652,16 @@ html {
   }
 }
 .email-me-form {
-  padding: 2rem;
-  background: #fff;
-  border-radius: 8px;
-  max-width: 500px;
+  max-width: 50rem;
   margin: 0 auto;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 
-  h2 {
-    margin-bottom: 1.5rem;
+  h1 {
+    margin-bottom: 3.2rem;
     text-align: center;
+    font-size: 3.2rem;
+    margin-top: 3.2rem;
+    line-height: 3.6rem;
+    font-family: "Soleto Bold", sans-serif;
   }
 
   form {

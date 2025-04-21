@@ -45,7 +45,7 @@ export const SurveyResults = ({
 
   return (
     <div className="survey-results-wrapper">
-      <Hexagon data={getHexagonData()} />
+      <Hexagon data={getHexagonData()} currentIndex={-1} />
       <section className="survey-results" aria-labelledby="results-heading">
         <h1 id="results-heading">See where you stand.</h1>
         <ul className="results-legend">

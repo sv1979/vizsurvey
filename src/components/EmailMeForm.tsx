@@ -21,11 +21,11 @@ export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
 
   return (
     <div className="email-me-form">
-      <h2>Email Me the Results</h2>
+      <h1>Unlock your results.</h1>
       {!submitted ? (
         <form onSubmit={handleSubmit}>
           <label>
-            Name
+            <span className="label-text">Your Name <i>required</i></span>
             <input
               type="text"
               value={name}
@@ -34,7 +34,7 @@ export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
             />
           </label>
           <label>
-            Email
+            <span className="label-text">Company Email <i>required</i></span>
             <input
               type="email"
               value={email}
@@ -43,7 +43,7 @@ export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
             />
           </label>
           <label>
-            Company
+            <span className="label-text">Company Name <i>required</i></span>
             <input
               type="text"
               value={company}
@@ -51,11 +51,11 @@ export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
               required
             />
           </label>
-          <div className="form-actions">
+          <div className="navigation">
             <button type="submit">Submit</button>
-            <button type="button" onClick={onBackToResults}>
+            {/* <button type="button" onClick={onBackToResults}>
               Back
-            </button>
+            </button> */}
           </div>
         </form>
       ) : (

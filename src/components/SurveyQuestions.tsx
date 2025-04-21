@@ -1,5 +1,6 @@
 import { HexagonData, HexagonDataItem, Question } from "../types";
 import { Hexagon } from "./Hexagon";
+import { useIsDesktop } from "../hooks/useIsDesktop";
 
 type Props = {
   survey: {
@@ -26,6 +27,8 @@ export const SurveyQuestions = ({
   onNext,
   onPrev,
 }: Props) => {
+
+  const isDesktop = useIsDesktop();
 
   const getQuestionText = (index: number): string => {
     return `Question ${index + 1} out of ${survey.questions.length}`
@@ -86,7 +89,7 @@ export const SurveyQuestions = ({
           </button>
         </div>
       </div>
-      <Hexagon data={getHexagonData()} />
+      {isDesktop && <Hexagon data={getHexagonData()} currentIndex={currentIndex} />}
     </div>
   );
 };

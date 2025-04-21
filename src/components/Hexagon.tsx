@@ -6,20 +6,26 @@ type SvgLabelProps = {
     y?: number;
     moveUp?: boolean;
     moveDown?: boolean;
+    active?: boolean;
 };
 
 type Props = {
-    data: HexagonData
+    data: HexagonData,
+    currentIndex: number
 }
 
-export const Hexagon = ({ data }: Props) => {
+export const Hexagon = ({ data, currentIndex }: Props) => {
     const SvgLabel: React.FC<SvgLabelProps> = ({
         text,
         x = 0,
         y = 0,
         moveUp = false,
-        moveDown = false
+        moveDown = false,
+        active = false
     }) => {
+        const fontSize = 9;
+        const lineHeight = fontSize * 1.2;
+
         const words = text.trim().split(" ");
         let firstLine = words.slice(0, Math.ceil(words.length / 2)).join(" ");
         let secondLine = words.slice(Math.ceil(words.length / 2)).join(" ");
@@ -49,24 +55,56 @@ export const Hexagon = ({ data }: Props) => {
             adjustedY += 5;
         }
 
+        const paddingX = 4;
+        const paddingY = 2;
+        const boxHeight = lines.length * lineHeight + paddingY * 4;
+        const boxWidth = Math.max(...lines.map(line => line.length)) * (fontSize * 0.6) + paddingX * 2;
+        const boxX = x - boxWidth / 2;
+        const boxY = adjustedY - fontSize + (lines.length === 1 ? -paddingY : -paddingY * 2);
+
         return (
-            <text className="svg-text-desktop" font-family="'Soleto Bold', sans-serif" font-size="9" fill="#181818"
-                x={x}
-                y={adjustedY}
-                textAnchor="middle"
-            >
-                {lines.map((line, i) => (
-                    <tspan key={i} x={x} dy={i === 0 ? "0em" : "1.2em"}>
-                        {line}
-                    </tspan>
-                ))}
-            </text>
+            <>
+                {active && (
+                    <rect
+                        x={boxX}
+                        y={boxY}
+                        width={boxWidth}
+                        height={boxHeight}
+                        rx={4}
+                        ry={4}
+                        fill="#fde2d8"
+                        opacity={0.9}
+                    />
+                )}
+
+                <text
+                    className={`svg-text-desktop${active ? " active" : ""}`}
+                    fontFamily="'Soleto Bold', sans-serif"
+                    fontSize="9"
+                    fill="#181818"
+                    x={x}
+                    y={adjustedY}
+                    textAnchor="middle"
+                >
+
+                    {lines.map((line, j) => (
+                        <tspan
+                            key={`main-${j}`}
+                            x={x}
+                            dy={j === 0 ? "0em" : "1.2em"}
+                        >
+                            {line}
+                        </tspan>
+                    ))}
+                </text>
+            </>
+
         );
     };
 
     return (
         <div className="hexagon">
-            <svg viewBox="-180 -120 360 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <svg viewBox="-180 -130 360 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
                 <g>
                     <defs>
                         <g id="segmentedTriangle">
@@ -173,12 +211,12 @@ export const Hexagon = ({ data }: Props) => {
                     </g>
 
                     <g>
-                        <SvgLabel text={data.data[0].title} x={130} y={0} />
-                        <SvgLabel text={data.data[1].title} x={55} y={95} moveDown={true} />
-                        <SvgLabel text={data.data[2].title} x={-55} y={95} moveDown={true} />
-                        <SvgLabel text={data.data[3].title} x={-130} y={0} />
-                        <SvgLabel text={data.data[4].title} x={-60} y={-100} moveUp={true}/>
-                        <SvgLabel text={data.data[5].title} x={60} y={-100}  moveUp={true}/>
+                        <SvgLabel text={data.data[0].title} x={130} y={0} active={currentIndex === 0} />
+                        <SvgLabel text={data.data[1].title} x={55} y={100} active={currentIndex === 1} moveDown={true} />
+                        <SvgLabel text={data.data[2].title} x={-55} y={100} active={currentIndex === 2} moveDown={true} />
+                        <SvgLabel text={data.data[3].title} x={-130} y={0} active={currentIndex === 3} />
+                        <SvgLabel text={data.data[4].title} x={-60} y={-105} active={currentIndex === 4} moveUp={true} />
+                        <SvgLabel text={data.data[5].title} x={60} y={-105} active={currentIndex === 5} moveUp={true} />
                     </g>
                 </g>
             </svg>

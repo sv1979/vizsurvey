@@ -53,6 +53,12 @@ function App() {
     setView("grid");
   };
 
+  const unlockYourResultsSubmit = () => {
+    console.log("Responses: ", responses)
+    setCurrentSurveyIndex(null);
+    setView("grid");
+  };
+
   const currentSurvey =
     currentSurveyIndex !== null ? surveys[currentSurveyIndex] : null;
 
@@ -136,7 +142,7 @@ function App() {
         {view === "questions" && currentSurvey && (
           <SurveyQuestions
             survey={currentSurvey}
-            answers={currentResponse?.answers}
+            answers={currentResponse?.answers ? currentResponse.answers : []}
             currentIndex={currentQuestionIndex}
             selectedOptionIndex={answers[currentQuestionIndex] ?? null}
             onSelectOption={onSelectOption}
@@ -154,7 +160,7 @@ function App() {
           />
         )}
         {view === "email" && (
-          <EmailMeForm onBackToResults={goHome} onSubmit={goHome} />
+          <EmailMeForm onBackToResults={goHome} onSubmit={unlockYourResultsSubmit} />
         )}
       </div>
       <footer className="footer">
