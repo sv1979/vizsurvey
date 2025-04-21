@@ -160,7 +160,7 @@ function App() {
           />
         )}
         {view === "email" && (
-          <EmailMeForm onBackToResults={goHome} onSubmit={unlockYourResultsSubmit} />
+          <EmailMeForm onSubmit={unlockYourResultsSubmit} />
         )}
       </div>
       <footer className="footer">

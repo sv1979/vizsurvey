@@ -1,20 +1,40 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 type Props = {
-  onBackToResults: () => void
-  onSubmit: (formData: { name: string; email: string; company: string }) => void
+  onSubmit: (formData: { username: string; email: string; company: string }) => void
 }
 
-export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
-  const [name, setName] = useState('')
+export const EmailMeForm = ({ onSubmit }: Props) => {
+  const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [company, setCompany] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [emailValid, setEmailValid] = useState<boolean>(true)
+  const [submitDisabled, setSubmitDisabled] = useState<boolean>(true)
 
+  const restrictedEmails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@outlook.com']
+
+  useEffect(() => {
+    if (username && email && company && emailValid) {
+      setSubmitDisabled(false)
+    } else {
+      setSubmitDisabled(true)
+    }
+  }, [username, email, company, emailValid])
+
+  useEffect(() => {
+    if (email) {
+      setEmailValid(restrictedEmails.every(value => !email.includes(value)))
+    } else {
+      setEmailValid(true)
+    }
+  }, [email])
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (name && email && company) {
-      onSubmit({ name, email, company })
+
+    if (username && email && company && emailValid) {
+      onSubmit({ username, email, company })
       setSubmitted(true)
     }
   }
@@ -28,8 +48,12 @@ export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
             <span className="label-text">Your Name <i>required</i></span>
             <input
               type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={username}
+              onChange={(e) => {
+                const value = e.target.value;
+                const filteredValue = value.replace(/[^a-zA-Z0-9 ]/g, '');
+                setUsername(filteredValue);
+              }}
               required
             />
           </label>
@@ -41,18 +65,24 @@ export const EmailMeForm = ({ onBackToResults, onSubmit }: Props) => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
+
+            {!emailValid && <span className="label-error">Please use your company email address.</span>}
           </label>
           <label>
             <span className="label-text">Company Name <i>required</i></span>
             <input
               type="text"
               value={company}
-              onChange={(e) => setCompany(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+                const filteredValue = value.replace(/[^a-zA-Z0-9 .]/g, '');
+                setCompany(filteredValue);
+              }}
               required
             />
           </label>
           <div className="navigation">
-            <button type="submit">Submit</button>
+            <button type="submit" className="button-solid-yellow" disabled={submitDisabled}>Submit</button>
             {/* <button type="button" onClick={onBackToResults}>
               Back
             </button> */}

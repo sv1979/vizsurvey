@@ -111,22 +111,22 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                             <path d="M0,0 L33,0 L16.5,28.6 Z" fill="#f9f9f9" />
                             <path d="M33,0 L66,0 L33,57.2 L16.5,28.6 Z" fill="#eeeeee" />
                             <path d="M66,0 L100,0 L50,86.6 L33,57.2 Z" fill="#e2e2e2" />
-                            <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                            <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                         </g>
                         <linearGradient id="triangleGradient0" x1="0" y1="0" x2="50" y2="86.6" gradientUnits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#ff9266" />
-                            <stop offset="100%" stop-color="#ff6a30" />
+                            <stop offset="0%" stopColor="#ff9266" />
+                            <stop offset="100%" stopColor="#ff6a30" />
                         </linearGradient>
                         <linearGradient id="triangleGradient1" x1="0" y1="0" x2="50" y2="86.6" gradientUnits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#ff9266" />
-                            <stop offset="50%" stop-color="#ff6a30" />
-                            <stop offset="100%" stop-color="#ff6a30" />
+                            <stop offset="0%" stopColor="#ff9266" />
+                            <stop offset="50%" stopColor="#ff6a30" />
+                            <stop offset="100%" stopColor="#ff6a30" />
                         </linearGradient>
                         <linearGradient id="triangleGradient2" x1="0" y1="0" x2="50" y2="86.6" gradientUnits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#ff9266" />
-                            <stop offset="33%" stop-color="#ff6a30" />
-                            <stop offset="66%" stop-color="#ff6a30" />
-                            <stop offset="100%" stop-color="#ed4b08" />
+                            <stop offset="0%" stopColor="#ff9266" />
+                            <stop offset="33%" stopColor="#ff6a30" />
+                            <stop offset="66%" stopColor="#ff6a30" />
+                            <stop offset="100%" stopColor="#ed4b08" />
                         </linearGradient>
                     </defs>
                     <use href="#segmentedTriangle" transform="rotate(30)" />
@@ -143,7 +143,7 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                         {data.data[0].val === 2 &&
                             (<path d="M0,0 L100,0 L50,86.6 Z" fill="url(#triangleGradient2)" />)}
 
-                        <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                        <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                     </g>
 
                     <g transform="rotate(30)">
@@ -154,7 +154,7 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                         {data.data[1].val === 2 &&
                             (<path d="M0,0 L100,0 L50,86.6 Z" fill="url(#triangleGradient2)" />)}
 
-                        <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                        <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                     </g>
 
                     <g transform="rotate(90)">
@@ -165,7 +165,7 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                         {data.data[2].val === 2 &&
                             (<path d="M0,0 L100,0 L50,86.6 Z" fill="url(#triangleGradient2)" />)}
 
-                        <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                        <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                     </g>
 
                     <g transform="rotate(150)">
@@ -176,7 +176,7 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                         {data.data[3].val === 2 &&
                             (<path d="M0,0 L100,0 L50,86.6 Z" fill="url(#triangleGradient2)" />)}
 
-                        <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                        <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                     </g>
 
                     <g transform="rotate(210)">
@@ -187,7 +187,7 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                         {data.data[4].val === 2 &&
                             (<path d="M0,0 L100,0 L50,86.6 Z" fill="url(#triangleGradient2)" />)}
 
-                        <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                        <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                     </g>
 
                     <g transform="rotate(270)">
@@ -198,16 +198,16 @@ export const Hexagon = ({ data, currentIndex }: Props) => {
                         {data.data[5].val === 2 &&
                             (<path d="M0,0 L100,0 L50,86.6 Z" fill="url(#triangleGradient2)" />)}
 
-                        <path stroke="#fff" stroke-width="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
+                        <path stroke="#fff" strokeWidth="1" d="M0,0 L100,0 L50,86.6 Z" fill="none" />
                     </g>
 
                     <g>
-                        <text className="svg-text-mobile" x="100" y="5" text-anchor="middle" font-family="'Soleto Bold', sans-serif" font-size="18" fill="#181818">1</text>
-                        <text className="svg-text-mobile" x="52" y="90" text-anchor="middle" font-family="'Soleto Bold', sans-serif" font-size="18" fill="#181818">2</text>
-                        <text className="svg-text-mobile" x="-52" y="90" text-anchor="middle" font-family="'Soleto Bold', sans-serif" font-size="18" fill="#181818">3</text>
-                        <text className="svg-text-mobile" x="-100" y="5" text-anchor="middle" font-family="'Soleto Bold', sans-serif" font-size="18" fill="#181818">4</text>
-                        <text className="svg-text-mobile" x="-52" y="-80" text-anchor="middle" font-family="'Soleto Bold', sans-serif" font-size="18" fill="#181818">5</text>
-                        <text className="svg-text-mobile" x="52" y="-80" text-anchor="middle" font-family="'Soleto Bold', sans-serif" font-size="18" fill="#181818">6</text>
+                        <text className="svg-text-mobile" x="100" y="5" textAnchor="middle" fontFamily="'Soleto Bold', sans-serif" fontSize="18" fill="#181818">1</text>
+                        <text className="svg-text-mobile" x="52" y="90" textAnchor="middle" fontFamily="'Soleto Bold', sans-serif" fontSize="18" fill="#181818">2</text>
+                        <text className="svg-text-mobile" x="-52" y="90" textAnchor="middle" fontFamily="'Soleto Bold', sans-serif" fontSize="18" fill="#181818">3</text>
+                        <text className="svg-text-mobile" x="-100" y="5" textAnchor="middle" fontFamily="'Soleto Bold', sans-serif" fontSize="18" fill="#181818">4</text>
+                        <text className="svg-text-mobile" x="-52" y="-80" textAnchor="middle" fontFamily="'Soleto Bold', sans-serif" fontSize="18" fill="#181818">5</text>
+                        <text className="svg-text-mobile" x="52" y="-80" textAnchor="middle" fontFamily="'Soleto Bold', sans-serif" fontSize="18" fill="#181818">6</text>
                     </g>
 
                     <g>

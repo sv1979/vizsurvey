@@ -34,7 +34,7 @@ export type SurveyResult = {
 
 // Email form values
 export type EmailFormData = {
-  name: string;
+  username: string;
   email: string;
   company: string;
 };
