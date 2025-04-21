@@ -1,4 +1,5 @@
-import { Question } from "../types";
+import { HexagonData, HexagonDataItem, Question } from "../types";
+import { Hexagon } from "./Hexagon";
 
 type Props = {
   survey: {
@@ -8,6 +9,7 @@ type Props = {
     status: string;
     questions: Question[];
   };
+  answers: number[];
   currentIndex: number;
   selectedOptionIndex: number | null;
   onSelectOption: (index: number) => void;
@@ -17,6 +19,7 @@ type Props = {
 
 export const SurveyQuestions = ({
   survey,
+  answers,
   currentIndex,
   selectedOptionIndex,
   onSelectOption,
@@ -28,6 +31,20 @@ export const SurveyQuestions = ({
     return `Question ${index + 1} out of ${survey.questions.length}`
   }
 
+  const getHexagonData = (): HexagonData => {
+    const dataArray: HexagonDataItem[] = [];
+
+    survey.questions.map((_question, index) => {
+      const dataObject = {
+        title: _question.label,
+        val: answers[index]
+      }
+      dataArray.push(dataObject)
+    })
+
+    return { data: dataArray };
+  }
+  
   return (
     <div className="survey-question-wrapper">
       <ul className="survey-pagination">
@@ -42,7 +59,9 @@ export const SurveyQuestions = ({
         <p className="question-survey-title">
           {survey.questions[currentIndex].label}
         </p>
-        <h2 className="question-text">{survey.questions[currentIndex].text}</h2>
+        <h2 className="question-text" dangerouslySetInnerHTML={{
+                __html: survey.questions[currentIndex].text
+            }}></h2>
         <ul className="options">
           {survey.questions[currentIndex].options.map((option, index) => (
             <li key={index}>
@@ -67,6 +86,7 @@ export const SurveyQuestions = ({
           </button>
         </div>
       </div>
+      <Hexagon data={getHexagonData()} />
     </div>
   );
 };

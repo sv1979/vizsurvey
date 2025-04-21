@@ -136,6 +136,7 @@ function App() {
         {view === "questions" && currentSurvey && (
           <SurveyQuestions
             survey={currentSurvey}
+            answers={currentResponse?.answers}
             currentIndex={currentQuestionIndex}
             selectedOptionIndex={answers[currentQuestionIndex] ?? null}
             onSelectOption={onSelectOption}

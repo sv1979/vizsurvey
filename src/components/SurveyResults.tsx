@@ -66,7 +66,9 @@ export const SurveyResults = ({
               {getSign(answers[index])}
 
               <div className="answer-content">
-                <strong className="answer-title">{index + 1}. {question.text}</strong>
+                <strong className="answer-title" dangerouslySetInnerHTML={{
+                  __html: `${index + 1}. ${question.text}`
+                }}></strong>
                 <br />
                 <span className="answer-body">{question.options[answers[index]]}</span>
               </div>
