@@ -6,10 +6,9 @@ export type AnswerOption = {
 export type Question = {
   label: string;
   text: string;
-  options: string[]; // "options" will correspond to "answers" in your JSON
+  options: string[];
 }
 
-// Survey status: not started, in progress, completed
 export type SurveyStatus = "not-started" | "in-progress" | "completed";
 
 export type Survey = {
@@ -41,6 +40,12 @@ export type EmailFormData = {
 };
 
 export type UserSurveyResponse = {
-  surveyId: string; 
-  answers: number[]; 
+  surveyId: string;
+  answers: number[];
+}
+
+export type HexagonDataItem = { title: string, val: number }
+
+export type HexagonData {
+  data: HexagonDataItem[]
 }
