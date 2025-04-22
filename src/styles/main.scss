@@ -15,7 +15,8 @@ $color-red: #CE373F;
 
 $tablet: 768px;
 $desktop: 1440px;
-$desktop-xl: 1864px;
+$desktop-xl: 1868px;
+$totals-bottom-width: 120.6rem;
 
 @font-face {
   font-family: "Soleto";
@@ -485,6 +486,7 @@ html {
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-decoration: none;
 
   &.button-prev {
     background-color: $color-white;
@@ -778,25 +780,67 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    .totals-body-result {
-      color: $color-orange;
-      font-family: "Soleto Bold", sans-serif;
-      font-size: 2.4rem;
-      line-height: 1.33;
-      letter-spacing: -0.02em;
-    }
-    .totals-body-heading {
-      font-family: "Soleto Bold", sans-serif;
-      font-size: 3.2rem;
-      line-height: 1.125;
-      letter-spacing: -0.02em;
-    }
-    .totals-body-text {
-      font-size: 1.6rem;
-      line-height: 1.5;
+    gap: 1rem;
+  }
+
+  .totals-highlight {
+    color: $color-orange;
+    font-family: "Soleto Bold", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    margin: 0 0;
+  }
+
+  .totals-body-heading {
+    font-family: "Soleto Bold", sans-serif;
+    font-size: 3.2rem;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+  }
+
+  .totals-subtitle {
+    font-family: "Soleto Bold", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+  }
+
+  .totals-body-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0 0 1.6rem;
+  }
+
+  .totals-bottom {
+    max-width: $totals-bottom-width;
+    margin: 0 auto 2rem;
+  }
+  .totals-contact {
+    background-color: $color-grey-2;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-block: 1.6rem;
+    svg {
+      margin-bottom: 1rem;
     }
   }
 
+  .totlas-explore {
+    background-color: $color-grey-2;
+    padding: 2.4rem;
+    svg {
+      margin-bottom: 1rem;
+    }
+    .survey-card {
+      background-color: $color-white;
+    }
+  }
   @media screen and (min-width: $desktop) {
     .top {
       flex-direction: row;
@@ -810,6 +854,35 @@ html {
       text-align: left;
       align-items: flex-start;
       justify-content: flex-start;
+    }
+
+    .totals-body-wrapper {
+      border-block: 1px solid $color-grey-1;
+      margin-bottom: 6rem;
+    }
+    .totals-body {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: stretch;
+    }
+
+    .totals-body-info, .hexagon {
+      flex: 0 0 50%;
+    }
+
+    .totals-body-info {
+      border-right: 1px solid $color-grey-1;
+      justify-content: center;
+      padding-right: 4.8rem;
+    }
+
+    .totals-body-heading {
+      font-size: 3.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .totals-bottom {
+      margin-bottom: 5rem;
     }
   }
 }

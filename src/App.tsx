@@ -163,18 +163,20 @@ function App() {
         {view === "email" && (
           <EmailMeForm onSubmit={unlockYourResultsSubmit} />
         )}
-        {view === "totals" && (
-          <Totals surveys={surveys}
-            responses={responses}
-            currentSurveyId={currentSurvey?.id}
-            onSelect={(survey) => {
-              const index = surveys.findIndex((s) => s.id === survey.id);
-              if (index !== -1) {
-                startSurvey(index);
-              }
-            }} />
-        )}
       </div>
+      
+      {view === "totals" && (
+        <Totals surveys={surveys}
+          responses={responses}
+          currentSurveyId={currentSurvey?.id}
+          onSelect={(survey) => {
+            const index = surveys.findIndex((s) => s.id === survey.id);
+            if (index !== -1) {
+              startSurvey(index);
+            }
+          }} />
+      )}
+
       <footer className="footer">
         <div className="container">
           <p>
