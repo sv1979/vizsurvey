@@ -76,11 +76,11 @@ export const SurveyResults = ({
           ))}
         </ul>
         <div className="navigation small-widebuttons">
-          <button onClick={onEmailResults} className="button-solid-yellow"
+          <button onClick={onEmailResults} className="navbutton button-solid-yellow"
             aria-label="View Results">
             View Results
           </button>
-          <button onClick={onBackToList} className="button-taa"
+          <button onClick={onBackToList} className="navbutton button-taa"
             aria-label="Take another assessment">
             Take another assessment
           </button>

@@ -6,15 +6,15 @@ import { SurveyGrid } from "./components/SurveyGrid";
 import { SurveyQuestions } from "./components/SurveyQuestions";
 import { SurveyResults } from "./components/SurveyResults";
 import { EmailMeForm } from "./components/EmailMeForm";
+import { HeaderTotals } from "./components/HeaderTotals";
+import { Totals } from "./components/Totals";
 
-type View = "grid" | "questions" | "results" | "email";
+type View = "grid" | "questions" | "results" | "email" | "totals";
 
 function App() {
   const [view, setView] = useState<View>("grid");
   const [surveys, setSurveys] = useState<Survey[]>(initialSurveys as Survey[]);
-  const [currentSurveyIndex, setCurrentSurveyIndex] = useState<number | null>(
-    null
-  );
+  const [currentSurveyIndex, setCurrentSurveyIndex] = useState<number | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [responses, setResponses] = useState<UserSurveyResponse[]>([]);
 
@@ -55,8 +55,7 @@ function App() {
 
   const unlockYourResultsSubmit = () => {
     console.log("Responses: ", responses)
-    setCurrentSurveyIndex(null);
-    setView("grid");
+    setView("totals");
   };
 
   const currentSurvey =
@@ -125,6 +124,8 @@ function App() {
           {view === "questions" && currentSurvey && currentQuestionIndex > 0 && (
             <button className="header-restart" type="button" onClick={restartCurrentSurvey}>Restart</button>
           )}
+
+          {view === "totals" && <HeaderTotals surveys={surveys} goHome={goHome} />}
         </div>
       </header>
       <div className="container content-wrapper">
@@ -161,6 +162,17 @@ function App() {
         )}
         {view === "email" && (
           <EmailMeForm onSubmit={unlockYourResultsSubmit} />
+        )}
+        {view === "totals" && (
+          <Totals surveys={surveys}
+            responses={responses}
+            currentSurveyId={currentSurvey?.id}
+            onSelect={(survey) => {
+              const index = surveys.findIndex((s) => s.id === survey.id);
+              if (index !== -1) {
+                startSurvey(index);
+              }
+            }} />
         )}
       </div>
       <footer className="footer">

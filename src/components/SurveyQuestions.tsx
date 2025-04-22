@@ -79,11 +79,11 @@ export const SurveyQuestions = ({
           ))}
         </ul>
         <div className="navigation">
-          {currentIndex > 0 && <button onClick={onPrev} className="button-prev"
+          {currentIndex > 0 && <button onClick={onPrev} className="navbutton button-prev"
             aria-label="Go to previous question">
             Previous
           </button>}
-          <button onClick={onNext} disabled={selectedOptionIndex === null} className="button-next"
+          <button onClick={onNext} disabled={selectedOptionIndex === null} className="navbutton button-next"
             aria-label="Go to next question">
             Next
           </button>

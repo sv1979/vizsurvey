@@ -82,7 +82,7 @@ export const EmailMeForm = ({ onSubmit }: Props) => {
             />
           </label>
           <div className="navigation">
-            <button type="submit" className="button-solid-yellow" disabled={submitDisabled}>Submit</button>
+            <button type="submit" className="navbutton button-solid-yellow" disabled={submitDisabled}>Submit</button>
             {/* <button type="button" onClick={onBackToResults}>
               Back
             </button> */}
