@@ -19,6 +19,18 @@ export type Survey = {
   questions: Question[];
 };
 
+export type OutcomeData = {
+  headline: string;
+  copy: string;
+};
+
+export type Outcome = {
+  id: string;
+  hp: OutcomeData;
+  emerging: OutcomeData;
+  trailing: OutcomeData;
+}
+
 
 // User's selected answers for a survey
 export type SurveyAnswer = {

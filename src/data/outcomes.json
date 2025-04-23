@@ -1,0 +1,137 @@
+[
+    {
+        "id": "survey-1",
+        "hp": {
+            "headline": "Keep leading with purpose and presence",
+            "copy": "Your organization demonstrates a high-performing leadership model defined by strategic alignment, hands-on engagement and shared accountability. Leaders at all levels are visible, present and consistently reinforcing culture and priorities. According to our research, top-performing organizations are <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>defined by</a> mutual respect, multidisciplinary teamwork and alignment between senior leaders and staff. Your team reflects this through a unified purpose and goal-setting discipline that drives results. The next step is sustaining this momentum while remaining agile through change."
+        },
+        "emerging": {
+            "headline": "Momentum is building--stay the course",
+            "copy": "Your organization is making meaningful progress toward stronger leadership alignment and engagement. There is increasing visibility of leaders, growing clarity around strategic goals and signs of greater collaboration across teams and functions. As leadership becomes more hands-on and accountability structures mature, you’re laying the groundwork for a culture of shared ownership. According to our research, top-performing organizations are <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>defined by</a> mutual respect, multidisciplinary teamwork and alignment between senior leaders and staff—qualities your team is beginning to cultivate. Continued focus on leadership presence and consistent communication of priorities will help move the organization toward that high-performing standard."
+        },
+        "trailing": {
+            "headline": "Lay the groundwork for aligned, visable leadership",
+            "copy": "Your assessment indicates that leadership practices may currently lack visibility, alignment and shared accountability across the organization. Strategic goals are likely siloed, with limited connection between the board, executive team and frontline leaders. Without a consistent leadership presence or clear systems to reinforce expectations, it can be difficult to build trust, drive improvement or sustain change. Vizient’s research shows that <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>top performers succeed</a> through mutual respect, collaboration, and a clear sense of shared purpose—qualities that grow when leaders are consistently engaged and aligned. Strengthening leadership visibility and establishing unified goals are essential next steps on the path to improvement."
+        }
+    },
+    {
+        "id": "survey-2",
+        "hp": {
+            "headline": "You're turning insight into impact",
+            "copy": "Your organization demonstrates a high level of data and technology maturity, using clean, accessible insights to drive operational, clinical and financial performance. Leaders actively use data to guide decisions and track progress against enterprise goals. Top performers move beyond being <a href='https://www.vizientinc.com/insights/all/2025/healthcare-leaders-identify-financial-sustainability-as-their-biggest-challenge'>“data rich and information poor”</a> by turning insights into action. Your use of AI for priorities like clinical documentation and automation reflects broader industry trends— <a href='https://www.vizientinc.com/insights/all/2025/start-small-scale-smart-how-low-risk-ai-implementations-can-transform-healthcare-one-step-at-time'>83% of health system leaders</a> name documentation as their top AI use case. You’re well-positioned to continue leading through innovation and data-driven strategy."
+        },
+        "emerging": {
+            "headline": "Your data strategy is taking shape",
+            "copy": "Your organization is building momentum in data and technology, with improving access to insights and early steps toward system-wide alignment. While some gaps remain in integration or usability, you’re progressing toward more strategic use of data. Top organizations use data tools to focus on what matters most—transforming information into action. Continued investment in data quality, governance and priority use cases like AI-driven documentation will help elevate performance and accelerate improvement."
+        },
+        "trailing": {
+            "headline": "Strengthen your foundation for smart, connected decisions",
+            "copy": "Your organization may be facing challenges with fragmented data, inconsistent reporting or limited use of insights for decision-making. Many systems are <a href='https://www.vizientinc.com/insights/all/2025/healthcare-leaders-identify-financial-sustainability-as-their-biggest-challenge'>“data rich and information poor”</a> —lacking the structure to translate data into action. Building a stronger data foundation, improving access and exploring high-impact use cases like documentation and automation can help reduce burden and drive performance. In fact, <a href='https://www.vizientinc.com/insights/all/2025/start-small-scale-smart-how-low-risk-ai-implementations-can-transform-healthcare-one-step-at-time'>57% of physicians</a> see automation as AI’s biggest opportunity."
+        }
+    },
+    {
+        "id": "survey-3",
+        "hp": {
+            "headline": "You're leading with discipline and agility",
+            "copy": "Your organization has embedded continuous improvement into daily operations, with visual management, standard work and team huddles consistently driving performance. Teams are empowered to identify, act on and escalate issues, creating a culture of learning and reliability. <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>Research</a> shows that teams engaging in longer huddles—10 minutes or more—see greater improvements in safety and quality. Your sustained commitment to these daily habits reflects a mature improvement culture where operational excellence is the norm."
+        },
+        "emerging": {
+            "headline": "You're laying the groundwork—now build daily discipline",
+            "copy": "Your organization is making progress toward a more structured and consistent approach to improvement. Visual management, huddles and standard work are taking hold in some areas, though use and impact may still vary. <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>As research shows</a>, teams that huddle for 10 or more minutes around visual boards see greater improvements in safety and quality culture. Strengthening these habits across all levels of the organization will help accelerate readiness and drive sustainable performance gains."
+        },
+        "trailing": {
+            "headline": "Establish the core practices that drive daily improvement",
+            "copy": "Your assessment suggests that improvement work may be inconsistent, siloed or dependent on isolated projects. Visual management, standard work and daily huddles may be limited or absent—leaving gaps in team engagement and readiness. <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>Data shows</a> that teams spending more than 10 minutes in structured huddles are more likely to improve on quality and safety culture measures. Establishing these foundational routines is a critical step toward building a reliable, learning-driven organization."
+        }
+    },
+    {
+        "id": "survey-4",
+        "hp": {
+            "headline": "Strategy in action: aligned, agile and enterprise-wide",
+            "copy": "Your organization takes a proactive, data-informed approach to strategy, with strong alignment from planning through execution. Teams understand how their work supports system-wide goals, and your strategy adapts with market shifts—keeping you well-positioned in a rapidly evolving healthcare landscape."
+        },
+        "emerging": {
+            "headline": "Strategic alignment is growing—time to tighten the focus",
+            "copy": "Your organization is building stronger alignment between goals, planning and execution. While strategy may still vary by function, you’re moving toward a more integrated, data-informed approach. Strengthening enterprise-wide coordination will help accelerate performance and adaptability."
+        },
+        "trailing": {
+            "headline": "Build the foundation for system-wide strategic planning",
+            "copy": "Your organization may rely on siloed or reactive planning, with limited alignment between goals, strategy and execution. To compete in today’s healthcare landscape, building a centralized, data-informed strategy process will be key to improving coordination and impact."
+        }
+    },
+    {
+        "id": "survey-5",
+        "hp": {
+            "headline": "Your culture drives performance, safety and well-being",
+            "copy": "Your organization has cultivated a strong, aligned culture where psychological safety, shared purpose and accountability for quality are embedded across teams. Employees feel connected to the mission, ready for change and supported to do their best work. Research shows that this kind of climate—one with a visible commitment to safety and trust—not only reduces burnout, but is also linked to <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>lower in-hospital mortality</a>. From clinical excellence to workforce well-being, your culture is clearly a driver of both performance and resilience."
+        },
+        "emerging": {
+            "headline": "A stronger, more aligned culture is taking root",
+            "copy": "Your organization is making important strides in building a healthier, more connected workplace culture. There’s growing alignment to mission and values, and efforts are underway to reduce burnout and strengthen team collaboration. As cultural infrastructure takes shape, so does the opportunity to create a climate of safety—something shown to reduce personal burnout and improve patient outcomes, <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>including lower in-hospital mortality</a>. Continued focus on psychological safety, team structure and leader role modeling will help elevate your culture to the next level."
+        },
+        "trailing": {
+            "headline": "Build a culture of safety, trust and shared accountability",
+            "copy": "Your assessment suggests that your organization may be experiencing cultural fragmentation, with misalignment across teams and limited accountability for quality or psychological safety. Without a strong cultural foundation, burnout risks increase and improvement efforts can stall. Evidence shows that a workplace culture grounded in safety and trust leads to <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/afa824826118448b8b7ead32ea0f22a5?v=bd688ba5'>lower in-hospital mortality and reduced staff burnout</a>. Strengthening alignment to your mission, building shared accountability and fostering a climate of respect and transparency are essential steps toward a healthier, high-performing environment."
+        }
+    },
+    {
+        "id": "survey-6",
+        "hp": {
+            "headline": "You're managing spend with strategy and precision",
+            "copy": "Your organization takes a strategic, system-wide approach to spend management, aligning clinical, operational and financial leaders around total cost of care. With hospital expenses rising 17.5% since 2019 and <a href='https://info.vizientinc.com/spend-management-outlook-winter-2025'>Vizient projecting continued price increases</a>, this level of integration is critical. Your proactive, data-driven model positions you to manage costs effectively while sustaining quality and long-term financial health."
+        },
+        "emerging": {
+            "headline": "Progess made--now build system-wide discipline",
+            "copy": "Your organization is making steady progress toward more integrated and strategic spend management. Stakeholders are beginning to collaborate across departments, and physicians are engaged in some cost-related decisions—but efforts may still vary by category or facility. This work is increasingly important as hospital expenses have surged <a href='https://info.vizientinc.com/spend-management-outlook-winter-2025'>17.5% since 2019</a>, and <a href='https://www.vizientinc.com/insights/all/2025/healthcare-leaders-identify-financial-sustainability-as-their-biggest-challenge'>40% of health leaders</a> cite fixed and variable expense management as a top challenge. As Vizient forecasts continued cost escalation, building enterprise-wide alignment and strengthening governance around spend will be key to driving efficiency and financial resilience."
+        },
+        "trailing": {
+            "headline": "Align teams and tools to take control of costs",
+            "copy": "Your assessment suggests that spend management may be siloed or reactive, with limited clinical engagement or cross-functional coordination. As hospital expenses have risen <a href='https://info.vizientinc.com/spend-management-outlook-winter-2025'>17.5% since 2019</a>—and 40% of leaders cite <a href='https://www.vizientinc.com/insights/all/2025/healthcare-leaders-identify-financial-sustainability-as-their-biggest-challenge'>cost management as a top challenge</a> —greater alignment is essential. Strengthening collaboration across supply chain, finance and clinical leaders can help control rising costs and build financial resilience."
+        }
+    },
+    {
+        "id": "survey-7",
+        "hp": {
+            "headline": "You’re operating as one system with unified strength",
+            "copy": "Your organization demonstrates strong system alignment, with unified governance, brand strategy and service integration across entities. Decision-making is clearly structured, financial and operational reporting are centralized and patients experience seamless transitions across the continuum. This level of alignment enables economies of scale, consistent quality and a stronger market presence. By operating as one system with shared purpose and accountability, your organization is positioned to deliver both operational excellence and a cohesive experience for patients, staff and communities."
+        },
+        "emerging": {
+            "headline": "System alignment is taking shape—now build consistency",
+            "copy": "Your organization is making progress toward greater system alignment, with growing consistency in governance, reporting and service integration across entities. Some functions and care models are coordinated at the system level, but variability remains in how decisions are made and how care is delivered across sites. As healthcare systems seek to optimize performance and deliver a seamless experience, continued focus on clarifying decision rights, centralizing support functions and unifying branding and culture will help accelerate progress."
+        },
+        "trailing": {
+            "headline": "Strengthen the ties that connect your system",
+            "copy": "Your assessment suggests that your organization may be operating more as a collection of entities than a unified system. Decision-making is likely decentralized, with limited coordination across governance, financial structures or care delivery. This can lead to inefficiencies, inconsistent experiences and missed opportunities for scale. Strengthening system alignment—through centralized functions, shared goals and a cohesive brand and culture—will be key to unlocking performance and delivering a more connected experience for patients and staff."
+        }
+    },
+    {
+        "id": "survey-8",
+        "hp": {
+            "headline": "Your physician enterprise is unified, aligned and engaged",
+            "copy": "Your organization has established a highly integrated physician enterprise, with centralized credentialing, shared governance and aligned incentives that support quality, efficiency and growth. Standardized care pathways and clinical protocols are implemented across entities, with strong adherence and a feedback loop for continuous improvement. Physicians are actively engaged in strategy, performance and leadership—hallmarks of high-performing health systems that succeed through collaboration, data-driven decision-making and clinical alignment."
+        },
+        "emerging": {
+            "headline": "Physician alignment is strengthening—keep building the bridge",
+            "copy": "Your organization is progressing toward stronger physician alignment, with growing efforts to standardize care, improve onboarding and involve physicians in decision-making. While centralized processes and shared governance structures may still be evolving, physicians are increasingly engaged in clinical performance and improvement initiatives. Continued focus on alignment, transparency, and leadership development will be key to building a cohesive, system-wide physician enterprise."
+        },
+        "trailing": {
+            "headline": "Lay the foundation for a connected, collaborative physician enterprise",
+            "copy": "Your assessment suggests limited alignment across your physician enterprise. Processes like credentialing, onboarding and peer review are likely handled locally with little system-level coordination. Clinical pathways and protocols may vary by site, and physician engagement in strategy or governance is minimal. This lack of integration can create inefficiencies, inconsistent care and missed opportunities for collaboration. Building centralized processes, engaging physicians in shared leadership and aligning incentives to system goals will be critical to strengthening performance."
+        }
+    },
+    {
+        "id": "survey-9",
+        "hp": {
+            "headline": "You're leading in access and outpatient growth",
+            "copy": "Your organization has built a strong, consumer-focused ambulatory strategy with advanced capabilities in access, care coordination and team-based delivery. With over 4.5 billion ambulatory visits occuring in 2024 and <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/a6e73aea9ae14990b8b70d9eb8911b39'>ambulatory revenue projected</a> to surpass 50% of total health system income as outpatient utilization continues to grow, this focus is critical. Your integration of virtual care, scheduling tools and connected sites positions you to lead in access, growth and patient experience."
+        },
+        "emerging": {
+            "headline": "Foundations are forming--accelerate integration and innovation",
+            "copy": "Your organization is making solid progress in expanding and connecting ambulatory services. Key consumer-facing capabilities like virtual visits, online scheduling and care coordination are being developed, though not yet consistently implemented across the system. With ambulatory visits exceeding 4.5 billion in 2024 and revenue expected to make up <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/a6e73aea9ae14990b8b70d9eb8911b39'>over 50% of total health system income</a> as outpatient utilization continues to grow, now is a critical time to accelerate this work. Continued investment in integration, access technologies and patient-centered strategies will help your organization compete in an increasingly outpatient-driven market."
+        },
+        "trailing": {
+            "headline": "Act now to compete in the outpatient-driven future",
+            "copy": "Your assessment suggests that ambulatory capabilities may be underdeveloped or siloed, with limited access tools, weak care coordination or reliance on traditional delivery models. As outpatient care accelerates—with over 4.5 billion visits in 2024 and ambulatory revenue <a href='https://vizientinc-delivery.sitecorecontenthub.cloud/api/public/content/a6e73aea9ae14990b8b70d9eb8911b39'>expected to surpass 50% of total system income</a> as outpatient utilization continues to rise—organizations that lag in this area risk falling behind in both growth and patient experience. Strengthening your ambulatory strategy through virtual care, scheduling systems and site-of-care integration is essential for meeting consumer expectations and staying competitive."
+        }
+    }
+]

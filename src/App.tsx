@@ -17,6 +17,11 @@ function App() {
   const [currentSurveyIndex, setCurrentSurveyIndex] = useState<number | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [responses, setResponses] = useState<UserSurveyResponse[]>([]);
+  const [userFormData, setUserFormData] = useState<{
+    username: string;
+    email: string;
+    company: string;
+  } | null>(null);
 
   const startSurvey = (index: number) => {
     const selectedSurvey = surveys[index];
@@ -53,8 +58,9 @@ function App() {
     setView("grid");
   };
 
-  const unlockYourResultsSubmit = () => {
+  const unlockYourResultsSubmit = (formData: { username: string; email: string; company: string }) => {
     console.log("Responses: ", responses)
+    setUserFormData(formData);
     setView("totals");
   };
 
@@ -161,7 +167,8 @@ function App() {
           />
         )}
         {view === "email" && (
-          <EmailMeForm onSubmit={unlockYourResultsSubmit} />
+          <EmailMeForm onSubmit={unlockYourResultsSubmit} 
+            initialData={userFormData}/>
         )}
       </div>
       
@@ -174,7 +181,14 @@ function App() {
             if (index !== -1) {
               startSurvey(index);
             }
-          }} />
+          }} 
+          onShowResults = {(surveyId) => {
+            const index = surveys.findIndex((s) => s.id === surveyId);
+            if (index !== -1) {
+              setCurrentSurveyIndex(index);
+            }
+          }}
+          />
       )}
 
       <footer className="footer">

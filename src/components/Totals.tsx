@@ -1,3 +1,4 @@
+import outcomes from "./../data/outcomes.json";
 import { HexagonData, HexagonDataItem, Survey, UserSurveyResponse } from "../types";
 import { Hexagon } from "./Hexagon";
 
@@ -6,12 +7,18 @@ type Props = {
   responses: UserSurveyResponse[];
   currentSurveyId?: string;
   onSelect: (survey: Survey) => void;
+  onShowResults: (id: string) => void;
 };
 
-export const Totals = ({ surveys, responses, currentSurveyId, onSelect }: Props) => {
+interface SelectOptionProps {
+  id: string;
+}
+
+export const Totals = ({ surveys, responses, currentSurveyId, onSelect, onShowResults }: Props) => {
 
   const currentSurvey = surveys.find(el => el.id === currentSurveyId) ?? surveys[0];
   const currentSurveyResponse = responses.find(el => el.surveyId === currentSurveyId) ?? responses[0];
+  const currentSurveyOutcomes = outcomes.find((el: { id: string | undefined; }) => el.id === currentSurveyId);
 
   const CurrentSurveyInfo: React.FC<{}> = ({ }) => {
     const title = currentSurvey?.title ?? "";
@@ -38,23 +45,49 @@ export const Totals = ({ surveys, responses, currentSurveyId, onSelect }: Props)
     return { data: dataArray };
   }
 
+  const getScore = () => {
+    let score = 0;
+    currentSurveyResponse.answers.map(el => { score += (el + 1) })
+    return score;
+  }
+
   const bodyResult = () => {
-    return "High Performing" //TODO
+    if (getScore() < 10) {
+      return 'Trailing';
+    } else if (getScore() < 14) {
+      return 'Emerging';
+    } else {
+      return 'High Performing'
+    }
   }
 
   const bodyHeading = () => {
-    return "Keep leading with purpose and presence" //TODO
+    if (getScore() < 10) {
+      return currentSurveyOutcomes?.trailing.headline;
+    } else if (getScore() < 14) {
+      return currentSurveyOutcomes?.emerging.headline;
+    } else {
+      return currentSurveyOutcomes?.hp.headline;
+    }
   }
 
-  const bodyText = () => { //TODO
-    return `Your organization demonstrates a high-performing leadership model
-     defined by strategic alignment, hands-on engagement and shared accountability. 
-     Leaders at all levels are visible, present and consistently reinforcing culture and priorities. 
-     According to our research, top-performing organizations are defined by mutual respect, 
-     multidisciplinary teamwork and alignment between senior leaders and staff. 
-     Your team reflects this through a unified purpose and goal-setting discipline that drives results. 
-     The next step is sustaining this momentum while remaining agile through change.`
+  const bodyText = () => {
+    if (!currentSurveyOutcomes) { return "" }
+    if (getScore() < 10) {
+      return currentSurveyOutcomes?.trailing.copy;
+    } else if (getScore() < 14) {
+      return currentSurveyOutcomes?.emerging.copy;
+    } else {
+      return currentSurveyOutcomes?.hp.copy;
+    }
   }
+
+
+  const SelectOption: React.FC<SelectOptionProps> = ({ id }) => (
+    <option value={id}>
+      {surveys.find(el => el.id === id)?.title}
+    </option>
+  );
 
   return (
     <div className="totals-wrapper">
@@ -63,7 +96,22 @@ export const Totals = ({ surveys, responses, currentSurveyId, onSelect }: Props)
         <section className="top">
           <CurrentSurveyInfo />
           <div className="info">
-            {/* To confirm design */}
+            {responses.length > 1 && (
+              <select
+                className="totals-top-select"
+                value={currentSurveyId}
+                onChange={(e) => {
+                  const selectedSurvey = surveys.find(s => s.id === e.target.value);
+                  if (selectedSurvey) {
+                    onShowResults(selectedSurvey.id);
+                  }
+                }}
+              >
+                {responses.map((el, index) => (
+                  <SelectOption id={el.surveyId} key={index} />
+                ))}
+              </select>
+            )}
           </div>
         </section>
       </div>

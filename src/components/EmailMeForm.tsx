@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react'
 
 type Props = {
-  onSubmit: (formData: { username: string; email: string; company: string }) => void
+  onSubmit: (formData: { username: string; email: string; company: string }) => void;
+  initialData?: {
+    username: string;
+    email: string;
+    company: string;
+  } | null;
 }
 
-export const EmailMeForm = ({ onSubmit }: Props) => {
-  const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
-  const [company, setCompany] = useState('')
-  const [submitted, setSubmitted] = useState(false)
-  const [emailValid, setEmailValid] = useState<boolean>(true)
-  const [submitDisabled, setSubmitDisabled] = useState<boolean>(true)
+export const EmailMeForm = ({ onSubmit, initialData }: Props) => {
+  const [username, setUsername] = useState(initialData?.username || '');
+  const [email, setEmail] = useState(initialData?.email || '');
+  const [company, setCompany] = useState(initialData?.company || '');
+  const [submitted, setSubmitted] = useState(false);
+  const [emailValid, setEmailValid] = useState<boolean>(true);
+  const [submitDisabled, setSubmitDisabled] = useState<boolean>(true);
 
   const restrictedEmails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@outlook.com']
 
