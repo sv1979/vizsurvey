@@ -1,7 +1,8 @@
-// A single answer option for a question
 export type AnswerOption = {
   text: string;
 };
+
+export type View = "grid" | "questions" | "results" | "email" | "totals";
 
 export type Question = {
   label: string;
@@ -9,13 +10,11 @@ export type Question = {
   options: string[];
 }
 
-export type SurveyStatus = "not-started" | "in-progress" | "completed";
-
 export type Survey = {
   id: string;
   title: string;
   subtitle: string;
-  status: SurveyStatus;
+  status: string;
   questions: Question[];
 };
 

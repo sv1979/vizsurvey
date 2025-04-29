@@ -696,6 +696,12 @@ html {
     font-family: "Soleto Bold", sans-serif;
   }
 
+  h2 {
+    text-align: center;
+    text-wrap: balance;
+    margin-bottom: 2rem;
+  }
+
   form {
     display: flex;
     flex-direction: column;

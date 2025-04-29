@@ -46,7 +46,8 @@ export const EmailMeForm = ({ onSubmit, initialData }: Props) => {
 
   return (
     <div className="email-me-form">
-      <h1>Unlock your results.</h1>
+      <h1>Save your results.</h1>
+      <h2>Fill out the form to save your results and continue to the next assessment.</h2>
       {!submitted ? (
         <form onSubmit={handleSubmit}>
           <label>
